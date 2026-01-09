@@ -70,9 +70,9 @@ class LLMClient:
 
         try:
             with open(audio_file_path, "rb") as audio_file:
-                # Use Whisper API with timestamp option
+                # Use OpenAI audio transcription with timestamp option
                 response = self.openai_client.audio.transcriptions.create(
-                    model=settings.WHISPER_MODEL,
+                    model=settings.OPENAI_MODEL,
                     file=audio_file,
                     language=language,
                     response_format="verbose_json",

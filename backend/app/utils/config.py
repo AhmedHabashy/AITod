@@ -43,7 +43,6 @@ class Settings:
     DEFAULT_LLM_PROVIDER: str = os.getenv("DEFAULT_LLM_PROVIDER", "gemini")
     OPENAI_MODEL: str = os.getenv("OPENAI_MODEL", "gpt-4o-audio-preview")
     GEMINI_MODEL: str = os.getenv("GEMINI_MODEL", "gemini-2.0-flash-exp")
-    WHISPER_MODEL: str = os.getenv("WHISPER_MODEL", "whisper-1")
 
     # Frontend Configuration
     FRONTEND_URL: str = os.getenv("FRONTEND_URL", "http://localhost:3000")
